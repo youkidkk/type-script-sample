@@ -1,7 +1,7 @@
 {
     "version": "0.2.0",
     "configurations": [{
-        "name": "Node.js: Current File",
+        "name": "ts-node: Current File",
         "type": "node",
         "request": "launch",
         "args": ["${file}"],

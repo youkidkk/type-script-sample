@@ -3,7 +3,6 @@
 ## TypeScript のインストール
 
 ```powershell
-> npm install -g typescript
-> npm install -g ts-node
+> npm install -g typescript ts-node
 ```
 

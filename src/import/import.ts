@@ -1,4 +1,4 @@
-import { EXP_CONST, expFunc, ExpClass } from "./module";
+import { EXP_CONST, expFunc, ExpClass } from "@/import/module";
 
 console.log(EXP_CONST);
 

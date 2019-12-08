@@ -1,4 +1,4 @@
-class ClassSample {
+class BasicSample {
   // public field
   public publicField: string;
   // private field
@@ -21,7 +21,7 @@ class ClassSample {
   }
 }
 
-const sample = new ClassSample(
+const sample = new BasicSample(
   "public sample",
   "private sample",
   "default sample"

@@ -10,6 +10,22 @@
         "group": {
             "kind": "build",
             "isDefault": true
+        },
+        "dependsOn": [
+            "clean"
+        ]
+    }, {
+        "label": "clean",
+        "type": "shell",
+        "windows": {
+            "command": "Remove-Item",
+            "args": [
+                "-Recurse",
+                "-Force",
+                "./build/*",
+                "-Exclude",
+                ".gitkeep"
+            ]
         }
     }]
 }

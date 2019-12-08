@@ -1,10 +1,19 @@
-// type
-type SampleType = { id: number; name: string };
+// type による型宣言
+type TypeA = { num: number; str: string };
 
-const sampleType: SampleType = { id: 123, name: "Name" };
-console.log(sampleType);
+// type型の実態の宣言
+const typeA: TypeA = { num: 123, str: "String" };
+// 以下は type error
+// const typeA: TypeA = { num: "Number", str: 123 };
+console.log(typeA);
 
-// typeの拡張
-type ExSampleType = SampleType & { age: number };
-const exSampleType: ExSampleType = { id: 234, name: "Name", age: 40 };
-console.log(exSampleType);
+// type の拡張
+type ExTypeA = TypeA & { bool: boolean };
+const exTypeA: ExTypeA = { num: 234, str: "String", bool: true };
+console.log(exTypeA);
+
+// 交差型
+type TypeB = { bool: boolean };
+type TypeCross = TypeA & TypeB;
+const typeCross: TypeCross = { num: 345, str: "String", bool: true };
+console.log(typeCross);

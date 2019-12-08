@@ -12,5 +12,13 @@
         "env": {
             "TS_NODE_IGNORE": "false"
         }
+    }, {
+        "type": "node",
+        "request": "launch",
+        "name": "Node.js: Current File",
+        "program": "${file}",
+        "env": {
+            "NODE_PATH": "./build"
+        }
     }]
 }

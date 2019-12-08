@@ -12,4 +12,7 @@
             "autoFix": true
         }
     ],
+    "[typescript]": {
+        "editor.tabSize": 2,
+    }
 }

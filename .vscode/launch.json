@@ -17,6 +17,8 @@
         "request": "launch",
         "name": "Node.js: Current File",
         "program": "${file}",
+        "outFiles": ["${workspaceFolder}/build/**/*.js"],
+        "preLaunchTask": "build",
         "env": {
             "NODE_PATH": "./build"
         }

@@ -12,6 +12,14 @@
             "isDefault": true
         },
         "dependsOn": [
+            "test"
+        ]
+    }, {
+        "label": "test",
+        "type": "shell",
+        "command": "npm",
+        "args": ["run", "coverage"],
+        "dependsOn": [
             "clean"
         ]
     }, {

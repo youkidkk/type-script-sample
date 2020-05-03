@@ -11,7 +11,14 @@
         "internalConsoleOptions": "openOnSessionStart",
         "env": {
             "TS_NODE_IGNORE": "false"
-        }
+        },
+        "outputCapture": "std",
+    }, {
+        "name": "mocha: Current File",
+        "type": "node",
+        "request": "launch",
+        "args": ["node_modules/mocha/bin/mocha", "-r", "ts-node/register", "${file}"],
+        "cwd": "${workspaceRoot}",
     }, {
         "type": "node",
         "request": "launch",
@@ -21,6 +28,7 @@
         "preLaunchTask": "build",
         "env": {
             "NODE_PATH": "./build"
-        }
+        },
+        "outputCapture": "std",
     }]
 }

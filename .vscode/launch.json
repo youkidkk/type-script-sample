@@ -17,7 +17,7 @@
         "name": "mocha: Current File",
         "type": "node",
         "request": "launch",
-        "args": ["node_modules/mocha/bin/mocha", "-r", "ts-node/register", "${file}"],
+        "args": ["node_modules/mocha/bin/mocha", "-r", "ts-node/register", "-r", "tsconfig-paths/register", "${file}"],
         "cwd": "${workspaceRoot}",
     }, {
         "type": "node",
